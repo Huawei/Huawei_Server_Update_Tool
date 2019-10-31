@@ -1,0 +1,9 @@
+[huawei-server-driver]
+baseurl = https://houp.huawei.com/download/server/Linux/Driver/Redhat/Rhel$releasever/$basearch/current/
+gpgcheck = 1
+name = Huawei-$releasever-Driver
+
+[huawei-server-firmware]
+baseurl = https://houppr.rnd.huawei.com/download/server/Linux/firmware/current/
+gpgcheck = 1
+name = Huawei-$releasever-Firmware

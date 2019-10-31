@@ -1,0 +1,11 @@
+#!/bin/sh
+filepath=$(dirname $(readlink -f $0))
+cd $filepath
+
+#LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./../python27/lib/python2.7/lib-dynload
+#export LD_LIBRARY_PATH
+#export PYTHONHOME=./../python27
+#./../python27/python2.7 ./../scripts/main.py "$@"
+
+export LANG=en_US.UTF-8
+python ./../scripts/main.py "$@"

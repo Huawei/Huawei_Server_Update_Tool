@@ -1,0 +1,73 @@
+#! /usr/bin/python
+# -*- coding: UTF-8 -*-
+UPGRADE_METHOD = {
+    "LOCAL": 1
+}
+TEMP_PATH = {
+    "UNZIP_PATH": None
+}
+
+MODE_DRIVER = "driver"
+MODE_INBAND = "inband"
+MODE_OUTBAND = "outband"
+
+PREF_DRIVER = "Drv-"
+PREF_FIRMWARE = "FW-"
+
+RESULT_COMPLETE = "Completed"
+RESULT_FAILED = "Exception"
+RESULT_PENDING = "Pending"
+RESULT_RUNNING = "Running"
+
+SORTED_RESULT_STATUS = {
+    RESULT_COMPLETE: 4,
+    RESULT_FAILED: 3,
+    RESULT_RUNNING: 2,
+    RESULT_PENDING: 1,
+}
+# modify : DTS2019102207058 2019/10/22 整改升级失败的提示信息
+UPDATE_FAIL = "update failed :"
+
+RESULT_MAPPING = {
+    RESULT_COMPLETE: "successful",
+    RESULT_FAILED: "failed"
+}
+
+TYPE_BIOS = "bios"
+TYPE_BMC = "ibmc"
+
+KEY_FILE_TYPE_ERROR = "FILE_TYPE_ERROR"
+KEY_UNZIP_ERROR = "UNZIP_ERROR"
+KEY_FIRMWARE_PACKAGE_ERROR = "FIRMWARE_PACKAGE_ERROR"
+KEY_TYPE_UID_NOT_MATCH = "TYPE_UID_NOT_MATCH"
+KEY_UNZIP_SUCCEED = "UNZIP_SUCCEED"
+KEY_TIME_OUT = "TIME_OUT"
+KEY_GET_UID_ERROR = "GET_UID_ERROR"
+UPDATE_CODE = "UPDATE_CODE"
+UPDATE_MESSAGE = "UPDATE_MESSAGE"
+ABNORMAL_EXIT_CODE = "ABNORMAL_EXIT_CODE"
+UPLOAD_FIRMWARE_PACKAGE_ERROR = "UPLOAD_FIRMWARE_PACKAGE_ERROR"
+UPDATE_OUTBAND_FW_ERROR = "UPDATE_OUTBAND_FW_ERROR"
+BMC_ERROR = "BMC_ERROR"
+
+UPGRADE_TIME_OUT = {
+    TYPE_BIOS: 1500,
+    TYPE_BMC: 900
+}
+TO_BMC_RESTART = 600
+
+ODATA_ID_KEY = "@odata.id"
+SPT_MODEL_UID_KEY = "SupportModelUID="
+
+DFT_RHEL_REPO_URL = ("http://houp.huawei.com/download/server/Linux/Driver"
+                     "/Redhat/Rhel$releasever/$basearch/current/")
+
+FMT_CONSOLE = "console"
+
+PING_BMC_CMD = "ping6 FE80:0000:0000:0000:9E7D:A3FF:FE28:6FFA%veth -c 2 2>/dev/null"
+
+IBMA_INI_PATH = "/opt/huawei/ibma/config/iBMA.ini"
+DRIVE_KO_LIST = ("host_veth_drv", "host_cdev_drv", "host_edma_drv")
+
+HOUP_DRV_SECTION = "huawei-server-driver"
+HOUP_FM_SECTION = "huawei-server-firmware"
